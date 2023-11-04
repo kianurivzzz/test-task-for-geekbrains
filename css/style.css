@@ -10,6 +10,14 @@ body {
     max-width: 1200px;
 }
 
+.hamb {
+    display: none;
+}
+
+.popup {
+    display: none;
+}
+
 .header {
     background-color: rgb(135, 80, 156);
     height: 100vh;

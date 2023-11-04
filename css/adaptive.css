@@ -1,0 +1,210 @@
+@media (max-width: 500px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 500px;
+    }
+
+    .main .section__top .section__title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .main .section__top .section__disc {
+        display: none;
+    }
+
+    .main .section {
+        width: 100%;
+    }
+
+    .main .section .section__cards-list {
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .main .section .section__cards-list .card {
+        margin-top: 1em;
+        width: 50%;
+    }
+
+    .main .section .section__cards-list .card .card__title {
+        font-size: 14px;
+        margin-top: 1em;
+        font-weight: 700;
+    }
+
+    .main .section .section__cards-list .card .card-img {
+        width: 6em;
+        height: 6em;
+    }
+
+    .main .team .section__cards-list .card .card__subtitle {
+        font-size: 9px;
+    }
+
+    .main .team .section__cards-list .card .social-networks {
+        display: none;
+    }
+
+    .main .section .two-elem {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .main .section .two-elem .card-project .card__laptop-mockup {
+        width: 70%;
+    }
+
+    .main .employee-photo {
+        width: 6em;
+        height: 6em;
+    }
+
+    .main .reviews .section__reviews-list {
+        flex-direction: column;
+    }
+
+    .main .reviews .section__reviews-list .review {
+        flex-direction: column;
+    }
+
+    .main .reviews .section__reviews-list .review .card__text {
+        width: 100%;
+    }
+
+    .main .reviews .section__reviews-list .review:last-child,
+    .main .reviews .section__reviews-list .review:nth-child(3) {
+        display: none;
+    }
+
+    .main .form-section .form__container .form__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .form-section .form__container .form .form__top {
+        width: 70%;
+    }
+
+    .main .form-section .form__container .form .form__top .form__elem {
+        width: 100%;
+    }
+
+    .main .form-section .form__container .form .form__top .form__elem:first-child {
+        margin-bottom: 1em;
+    }
+
+    .main .form-section .form__container .form .form__elem {
+        width: 70%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer .footer_social-network {
+        font-size: 10px;
+        margin-right: 0.5em;
+    }
+
+    .footer .edge {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .navbar,
+    .logo {
+        display: none;
+    }
+
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamb__field {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+    }
+
+    .popup {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .popup.open {
+        left: 0;
+    }
+
+    .popup .navbar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+    }
+
+    .popup .navbar>li {
+        width: 100%;
+    }
+
+    .popup .navbar>li>a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f3f3f;
+    }
+
+    .popup .navbar>li>a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+    }
+
+    .hamb__field.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamb__field.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamb__field.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    body.noscroll {
+        overflow: hidden;
+    }
+}
