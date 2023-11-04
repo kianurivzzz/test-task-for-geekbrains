@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Poppins:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.header {
+    background-color: rgb(135, 80, 156);
+    height: 100vh;
+}
+
+.header h1,
+.header p,
+.header a {
+    color: white;
+}
+
+.logo {
+    font-family: 'Galada', cursive;
+    font-size: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    margin-left: 1em;
+    font-size: 20px;
+    padding: 0.25em 0.5em;
+}
+
+.navbar li:hover {
+    background-color: rgb(100, 58, 121);
+}
+
+.header-btn {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-btn p {
+    text-align: center;
+    width: 75%;
+    font-size: 35px;
+}
+
+.header-btn a {
+    margin-top: 5%;
+    background-color: rgb(235, 125, 75);
+    border-bottom: 4px solid rgb(231, 148, 109);
+    padding: 1em 5em;
+    transition: all 0.5s ease-in-out;
+    border-radius: 3px;
+}
+
+.header-btn a:hover {
+    transition: all 0.5s ease-in-out;
+    padding: 1.1em 5.1em;
+    background-color: rgb(234, 103, 42);
+}
+
+.main .section {
+    height: 100vh;
+}
+
+.main .section {
+    background-color: rgb(22, 194, 164);
+    height: 100vh;
+    color: white;
+}
+
+.main .section__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.main .section__top .section__title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main .section__top .divider {
+    border-bottom: 4px solid rgb(90, 90, 90);
+    width: 10%;
+    margin: 1em 0;
+}
+
+.main .section__top .section__disc {
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    width: 47%;
+}
+
+.main .section .section__cards-list {
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main .section .section__cards-list .card {
+    width: 16%;
+    text-align: center;
+}
+
+.main .section .section__cards-list .card .card__title {
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+
+.main .section .section__cards-list .card .card__disc {
+    font-weight: 300;
+    font-size: 10px;
+    margin-top: 1em;
+}
+
+.main .section .section__cards-list .card .card-img {
+    width: 10em;
+    height: 10em;
+}
+
+.main .team {
+    background-color: rgb(231, 241, 248);
+}
+
+.main .team .section__cards-list .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .employee-photo {
+    border-radius: 100px;
+    background-color: rgb(135, 135, 135);
+    width: 10em;
+    height: 10em;
+}
+
+.main .team .section__cards-list .card .card__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(105, 204, 237);
+}
+
+.main .team .section__cards-list .card .social-networks {
+    display: flex;
+    width: 75%;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.main .team .section__cards-list .card .social-networks .social-networks-logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.main .dark {
+    color: rgb(47, 61, 91);
+}
+
+.main .skills {
+    background-color: rgb(255, 255, 255);
+}
+
+.main .skills .circle-diagram {
+
+    --v: calc(((18/5) * var(--p) - 90)*1deg);
+
+    width: 10em;
+    height: 10em;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.main .skills .blue {
+    background:
+        linear-gradient(#fff, #fff) content-box,
+        linear-gradient(var(--v), #f2f2f2 50%, transparent 0) 0/min(100%, (50 - var(--p))*100%),
+        linear-gradient(var(--v), transparent 50%, rgb(49, 186, 231) 0) 0/min(100%, (var(--p) - 50)*100%),
+        linear-gradient(to right, #f2f2f2 50%, rgb(49, 186, 231) 0);
+}
+
+.main .skills .red {
+    background:
+        linear-gradient(#fff, #fff) content-box,
+        linear-gradient(var(--v), #f2f2f2 50%, transparent 0) 0/min(100%, (50 - var(--p))*100%),
+        linear-gradient(var(--v), transparent 50%, rgb(215, 70, 128) 0) 0/min(100%, (var(--p) - 50)*100%),
+        linear-gradient(to right, #f2f2f2 50%, rgb(215, 70, 128) 0);
+}
+
+.main .skills .green {
+    background:
+        linear-gradient(#fff, #fff) content-box,
+        linear-gradient(var(--v), #f2f2f2 50%, transparent 0) 0/min(100%, (50 - var(--p))*100%),
+        linear-gradient(var(--v), transparent 50%, rgb(20, 199, 168) 0) 0/min(100%, (var(--p) - 50)*100%),
+        linear-gradient(to right, #f2f2f2 50%, rgb(20, 199, 168) 0);
+}
+
+.main .skills .orange {
+    background:
+        linear-gradient(#fff, #fff) content-box,
+        linear-gradient(var(--v), #f2f2f2 50%, transparent 0) 0/min(100%, (50 - var(--p))*100%),
+        linear-gradient(var(--v), transparent 50%, rgb(235, 125, 75) 0) 0/min(100%, (var(--p) - 50)*100%),
+        linear-gradient(to right, #f2f2f2 50%, rgb(235, 125, 75) 0);
+}
+
+.main .portfolio {
+    background-color: rgb(255, 221, 153);
+}
+
+.main .section .two-elem {
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.main .section .two-elem .card-project {
+    margin-top: 5%;
+    width: 45%;
+}
+
+.main .section .two-elem .card-project .card__title {
+    font-size: 15px;
+}
+
+.main .section .two-elem .card-project .card__laptop-mockup {
+    width: 50%;
+    font-weight: 400;
+}
+
+.main .section .section__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main .section .section__btn-container .section__project-btn {
+    background-color: rgb(22, 194, 164);
+    border-bottom: 1px solid rgb(13, 130, 110);
+    padding: 0.7em 1.7em;
+    font-size: 13px;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    border-radius: 3px;
+}
+
+.main .section .section__btn-container .section__project-btn:hover {
+    background-color: rgb(13, 130, 110);
+    padding: 0.8em 1.8em;
+    transition: all 0.5s ease-in-out;
+}
+
+.main .reviews {
+    background-color: rgb(215, 70, 128);
+}
+
+.main .reviews .section__reviews-list {
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.main .reviews .section__reviews-list .review {
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .reviews .section__reviews-list .review .card__reviewer-photo {
+    border-radius: 100px;
+    background-color: rgb(135, 135, 135);
+    width: 7em;
+    height: 7em;
+}
+
+.main .reviews .section__reviews-list .review .card__text {
+    margin-left: 2%;
+    width: 50%;
+}
+
+.main .reviews .section__reviews-list .review .card__text .card__disc {
+    font-size: 13px;
+    text-align: left;
+}
+
+
+.main .reviews .section__reviews-list .review .card__text .card__title {
+    font-size: 16px;
+    text-align: left;
+}
+
+.main .reviews .section__reviews-list .review .card__text .card__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(250, 201, 149);
+    text-align: left;
+}
+
+.main .form-section {
+    background-color: rgb(60, 84, 153);
+}
+
+.main .form-section .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.main .form-section .form__container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .form-section .form__container .form .form__top {
+    margin-bottom: 1em;
+}
+
+.main .form-section .form__container .form .form__elem {
+    background-color: rgb(39, 58, 113);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 0.7em;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.main .form-section .form__container .form__send-btn {
+    margin-top: 3%;
+    background-color: rgb(49, 186, 231);
+    padding: 1em 4em;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: rgb(52, 75, 142);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer_social-network {
+    font-size: 17px;
+    color: white;
+    margin-right: 2em;
+}
+
+.footer .edge {
+    margin-right: 0;
+}
