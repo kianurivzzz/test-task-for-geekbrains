@@ -57,7 +57,7 @@
     }
 
     .main .section .two-elem .card-project .card__laptop-mockup {
-        width: 70%;
+        width: 55%;
     }
 
     .main .employee-photo {
@@ -71,10 +71,35 @@
 
     .main .reviews .section__reviews-list .review {
         flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
     }
 
     .main .reviews .section__reviews-list .review .card__text {
         width: 100%;
+    }
+
+    .main .reviews .section__reviews-list .review .card__reviewer-photo {
+        border-radius: 100px;
+        width: 5em;
+        height: 5em;
+    }
+
+    .main .reviews .section__reviews-list .review .card__text .card__disc {
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+    .main .reviews .section__reviews-list .review .card__text .card__title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .main .reviews .section__reviews-list .review .card__text .card__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
     }
 
     .main .reviews .section__reviews-list .review:last-child,
