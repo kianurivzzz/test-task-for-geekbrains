@@ -8,6 +8,10 @@
 
 # Задание №2
 
+13-минутная запись – [тык](https://drive.google.com/file/d/1O3ES10mqFP9GjRVwiIeHHGMRjFCfXlEw/view?usp=share_link)
+
+Очень тяжело было рассказать эти темы, даже очень кратко за 13 минут. Много разных прикольных штук пропустил :\)
+
 # Задание №3
 
 Идеи для презентации проектов на последнем занятии – [тык](https://docs.google.com/document/d/1hjH2GB-pkqnrycF5w_FkxPBluUIW7WiwPffBWgF54_U/edit?usp=sharing)
